@@ -1,0 +1,41 @@
+
+
+.main-card {
+
+    margin: 10px;
+
+
+    padding: 10px;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.main-card-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    background-color: wheat;
+}
+
+.main-card-text {
+    padding: 10px;
+}
+
+.main-card-desc p {
+    font-size: 0.9rem
+}
+
+.main-card-link p {
+    color: rgb(93, 30, 145);
+    font-size: 0.9rem
+}
+
+.main-card-link p:hover {
+    text-decoration: underline;
+}
+
+.main-card-disabled div {
+    opacity: 0.8;
+}

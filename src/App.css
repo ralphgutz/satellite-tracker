@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p, h1, h2, h3, a {
+    color: #0f0f0f;
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#header {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.fa-satellite {
+    font-size: 2rem;
+    color: #494040;
+}
+
+.header-title {
+    padding: 14px 0;
+}
+
+.header-title h2 {
+    color: rgb(63, 43, 179)
+}
+
+.header-title p {
+    font-size: 0.9rem;
+}
+
+
+ul {
+    padding: 0;
+}
+
+ul li{
+    display: inline;
+    list-style: none;
+    margin: 0 10px;
+}
+
+ul li a {
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid rgb(63, 43, 179);
+}
+
+.active {
+    border-bottom: 2px solid rgb(63, 43, 179);
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    justify-content: center;
+}
+
+.main-card-container {
+    justify-content: center;
+}
+
+.main-side-container {
+    padding: 20px;
+}
+
+.main-side-container a {
+    font-size: 1rem;
+}
+
+
+#sat-header {
+    margin: 40px 0;
+    text-align: center;
+}
+
+
+#main-tracker {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 10px 0;
+}
+
+#main-tracker h3 {
+    margin-bottom: 10px;
+}
+
+
+
+.card {
+    margin-bottom: 10px;
+    color: #f1f1f1;
+    font-size: 0.9rem;
+}
+
+.card-title {
+    background-color: rgb(93, 30, 145);
+    padding: 10px;
+    border-radius: 4px 4px 0 0;
+}
+
+.card-text {
+    background-color: transparent;
+    padding: 10px;
+    color: #0f0f0f;
+    font-weight: 500;
+    border: 2px solid rgb(93, 30, 145);
+    border-radius: 0 0 4px 4px;
+}
+
+
+
+.leaflet-container {
+    height: 400px;
+    width: 100%;
   }
+
+#sat-description {
+    padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+span {
+    width: 100%;
+    height: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+
+
+footer {
+    margin-top: 20px;
+
+
+    padding: 10px;
+    background-color: rgb(228, 228, 228);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer p, a {
+    font-size: 0.8rem;
+}
+
+.links a{
+    padding-right: 10px;
+}
+
+
+@media (max-width: 800px) {
+    #main-tracker {
+        display: inline;
+    }
+    main {
+        display: inline;
+        justify-content: center;
+    }
 }
